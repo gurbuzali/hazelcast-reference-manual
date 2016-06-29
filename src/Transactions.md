@@ -54,6 +54,8 @@ For the above example, when `map.put` is executed, no data will be put in the ma
 
 The isolation level in Hazelcast Transactions is `READ_COMMITTED`. If you are in a transaction, you can read the data in your transaction and the data that is already committed. If you are not in a transaction, you can only read the committed data.
 
+
+
 ![image](images/NoteSmall.jpg) ***NOTE:*** *The REPEATABLE_READ isolation level can also be exercised using the method `getForUpdate()` of `TransactionalMap`.*
 
 ### Queue/Set/List vs. Map/Multimap
